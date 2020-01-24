@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" href="styles\bootstrap-4.4.1-dist\css\bootstrap.min.css">
     </head>
-    <body style="background-color : #b3b3b3;">
+    <body style="background-color : #b3b3b3; overflow-x : hidden;">
         <!-- Creating Nav Bar -->
         <nav class="navbar navbar-dark col-lg-12" style="color : white; background-color : #292929">
             <a class="navbar-brand" href="#">
@@ -12,7 +12,25 @@
         </nav> <!-- End of Nav Bar-->
 
         <div class="row">
-            
+            <div class="col-lg-12">
+                <br>
+                <button class="btn btn-dark" style="height : 100%; width : 100%" onclick="makeBongoCat()">
+                    Generate Bongo Cat?
+                </button>
+                <br>
+            </div>
+            <div class="col-lg-12" id="bongoCatHome"></div>
         </div> <!--End of Row Div-->
     </body>
+
+    <script src="styles\JQuery\jquery-3.4.1.js"></script>
+    <script src="styles\bootstrap-4.4.1-dist\js\bootstrap.bundle.min.js"></script>
+    <script>
+        function makeBongoCat()
+        {
+            $("#bongoCatHome").hide();
+            document.getElementById("bongoCatHome").innerHTML = "<br><img src=\"images\\bongo_cat_template.jpg\" width=\"2000\" height=\"1000\" alt=\"\">";
+            $("#bongoCatHome").fadeIn(1000);
+        }
+    </script>
 </html>
