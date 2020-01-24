@@ -13,3 +13,5 @@ title_frame = Frame(bongo_cat)
 title_frame.configure(height=100, width=100, background="white")
 title_frame.grid(row=1, column=1)
 bongo_cat.mainloop()
+
+# Billy is learning Git. This will be a valuable skill in his bioinformatics career.
